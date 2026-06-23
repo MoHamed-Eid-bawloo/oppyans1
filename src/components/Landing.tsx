@@ -1453,14 +1453,14 @@ export default function Landing() {
       <Nav />
       <Hero />
       <Marquee />
-      <About />
-      <Services />
-      <Work />
-      <Process />
-      <Why />
-      <Testimonials />
-      <Clients />
-      <FAQ />
+      {/* <About /> */}
+      {/* <Services /> */}
+      {/* <Work /> */}
+      {/* <Process /> */}
+      {/* <Why /> */}
+      {/* <Testimonials /> */}
+      {/* <Clients /> */}
+      {/* <FAQ /> */}
       <Contact />
       <Footer />
     </main>
