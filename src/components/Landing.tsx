@@ -454,6 +454,9 @@ function Hero() {
                 <MagneticButton variant="outline" as="a" href="#work">
                   {tr(lang, t.hero.ctaWork)}
                 </MagneticButton>
+                <MagneticButton variant="outline" as="a" href="#contact">
+                  {tr(lang, t.hero.ctaQuote)}
+                </MagneticButton>
               </motion.div>
             </div>
           </div>
@@ -697,31 +700,48 @@ function Services() {
 
 const cases = [
   {
-    client: "Atlas Aerospace",
-    category: "Brand · Web · Motion",
-    title: "A new orbit for commercial flight.",
-    metric: "+340% inbound",
+    href: "https://bug-fix.online/",
+    client: "Bug Fix",
+    category: "مكافحة حشرات · Pest Control",
+    titleAr: "الحماية من الحشرات في الكويت",
+    titleEn: "Pest protection in Kuwait",
+    metric: "الكويت · Kuwait",
     color: "from-amber-500/30 to-rose-500/20",
   },
   {
-    client: "Noor Cosmetics",
-    category: "E-Commerce · Performance",
-    title: "A skincare house, reformulated.",
-    metric: "12× revenue in 18 mo",
-    color: "from-rose-400/30 to-fuchsia-500/20",
-  },
-  {
-    client: "Halcyon Hotels",
-    category: "Identity · Editorial",
-    title: "Hospitality that whispers, not shouts.",
-    metric: "94% direct bookings",
+    href: "https://dera3clean.com/",
+    client: "Dera3 Clean",
+    category: "مكافحة حشرات · Pest Control",
+    titleAr: "نظافة ومكافحة في الرياض",
+    titleEn: "Cleaning & pest control in Riyadh",
+    metric: "الرياض · Riyadh",
     color: "from-emerald-400/30 to-teal-500/20",
   },
   {
-    client: "Meridian Bank",
-    category: "Product · Brand System",
-    title: "Banking, returned to its senses.",
-    metric: "1.4M new accounts",
+    href: "https://tibyantranslations.com/",
+    client: "Tibyan Translations",
+    category: "ترجمة معتمدة · Certified Translation",
+    titleAr: "ترجمة معتمدة لدى الجهات الرسمية",
+    titleEn: "Certified translation for official authorities",
+    metric: "الكويت · Kuwait",
+    color: "from-violet-400/30 to-purple-500/20",
+  },
+  {
+    href: "https://lamaa-clean.com/",
+    client: "Lamaa Clean",
+    category: "خدمات نظافة · Cleaning",
+    titleAr: "نظافة احترافية في دبي والشارقة وعجمان",
+    titleEn: "Professional cleaning in Dubai, Sharjah & Ajman",
+    metric: "دبي · Dubai",
+    color: "from-rose-400/30 to-fuchsia-500/20",
+  },
+  {
+    href: "https://eltawakltransport.online/",
+    client: "التوكل السريع",
+    category: "نقل عفش · Furniture Transport",
+    titleAr: "نقل عفش في جميع أنحاء الكويت",
+    titleEn: "Furniture moving across Kuwait",
+    metric: "الكويت · Kuwait",
     color: "from-sky-400/30 to-indigo-500/20",
   },
 ];
@@ -758,7 +778,7 @@ function Work() {
           {cases.map((c, i) => (
             <FadeUp key={c.client} delay={(i % 2) * 0.1}>
               <a
-                href={WHATSAPP_URL}
+                href={c.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`group block relative aspect-[5/4] md:aspect-[4/3] rounded-3xl overflow-hidden ${i % 2 === 1 ? "md:translate-y-16" : ""}`}
@@ -779,7 +799,7 @@ function Work() {
                     {c.category}
                   </div>
                   <h3 className="font-display text-3xl md:text-5xl leading-[1.05] tracking-tight mb-5 text-balance">
-                    {c.title}
+                    {lang === "ar" ? c.titleAr : c.titleEn}
                   </h3>
                   <div className="flex items-center justify-between border-t border-white/15 pt-5">
                     <span className="text-sm text-muted-foreground">{c.client}</span>

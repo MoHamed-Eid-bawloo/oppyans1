@@ -11,17 +11,18 @@ const t = {
   },
 
   /* ---------- hero ---------- */
-  hero: {
+hero: {
     eyebrow: { ar: "استوديو تسويق رقمي · Oppyans", en: "Digital Marketing Studio · Oppyans" },
-    line1: { ar: "نطلق العلامات", en: "We launch brands" },
-    line2: { ar: "نحو القمة.", en: "to the top." },
+    line1: { ar: "من مجرد مشروع", en: "From just a project" },
+    line2: { ar: "إلى علامة تنافس.", en: "to a competing brand." },
     sub: {
-      ar: "استوديو رقمي متكامل لإدارة وسائل التواصل، الإعلانات المدفوعة، تصميم المواقع، SEO، الهوية البصرية وأنظمة النمو —",
-      en: "A full-stack digital studio for social media, paid ads, web design, SEO, branding, and growth systems —",
+      ar: "بنحول فكرتك لبراند ناجح وعملاء حقيقيين ومبيعات مضاعفة. دلوقتي وقتك تحقق النجاح اللي مشروعك يستحقه.",
+      en: "We turn your idea into a successful brand, real customers, and multiplied sales. Now is your time to achieve the success your project deserves.",
     },
-    subSuffix: { ar: "", en: "for brands ready to scale." },
+    subSuffix: { ar: "", en: "" }, // تم إفراغها لأن الترجمة أصبحت كاملة في حقل sub
     ctaWhatsApp: { ar: "👉 طلب عبر واتساب", en: "👉 Order via WhatsApp" },
     ctaWork: { ar: "استكشف أعمالنا", en: "Explore Our Work" },
+    ctaQuote: { ar: "اطلب عرض السعر", en: "Request a Quote" },
     stats: [
       { n: "150+", l: { ar: "علامة تجارية", en: "Brands" } },
       { n: "500+", l: { ar: "مشروع منجز", en: "Projects Done" } },
@@ -45,13 +46,13 @@ const t = {
   ],
 
   /* ---------- about ---------- */
-  about: {
+about: {
     label: { ar: "01 — الاستوديو", en: "01 — The Studio" },
-    line1: { ar: "صُمّم للعلامات", en: "Designed for" },
-    line2: { ar: "الطموحة.", en: "ambitious brands." },
+    line1: { ar: "هل علامتك التجارية بتعكس قيمة", en: "Does your brand truly reflect" },
+    line2: { ar: "مشروعك فعلًا.", en: "the value of your project?" },
     p1: {
-      ar: "فريق متخصص في التسويق الرقمي والتصميم والتطوير — نركز على التفاصيل التي تفصل",
-      en: "A specialized team in digital marketing, design & development — we focus on the details that separate",
+      ar: "نصمم، ونطور، ونسوق لنساعدك تبني حضورًا يلفت الانتباه ويصنع فرقًا.",
+      en: "We design, develop, and market to help you build a presence that captures attention and makes a difference.",
     },
     p1Highlight: { ar: "العمل الجيد", en: "good work" },
     p1After: {
@@ -246,8 +247,8 @@ const t = {
       {
         q: { ar: "كم يستغرق المشروع النموذجي؟", en: "How long does a typical project take?" },
         a: {
-          ar: "مشاريع المواقع والهوية تستغرق 4–8 أسابيع. التعاقدات الشهرية للتسويق تبدأ من 90 يوماً. نحدد النطاق بوضوح من الأسبوع الأول.",
-          en: "Website and branding projects take 4–8 weeks. Monthly marketing retainers start from 90 days. We define scope clearly from week one.",
+          ar: "مشاريع المواقع والهوية تستغرق 1-2 أسابيع. التعاقدات الشهرية للتسويق تبدأ من 90 يوماً. نحدد النطاق بوضوح من الأسبوع الأول.",
+          en: "Website and branding projects take 1-2 weeks. Monthly marketing retainers start from 90 days. We define scope clearly from week one.",
         },
       },
       {
